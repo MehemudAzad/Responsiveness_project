@@ -268,6 +268,9 @@ responsiveness
         width: 100%;
         height: auto;
     }
+    .main-site-img{
+        width: 100%;
+    }
     .upcoming-match-img{
         width: 100%;
     }
@@ -330,6 +333,9 @@ responsiveness
 .container{
     gap: 50px;
 }
+.main-site-img{
+    width: 100%;
+}
 .upcoming-match-img{
     width: 100%;
 }
@@ -338,7 +344,7 @@ responsiveness
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
 }
 .card{
     width: 100%;
