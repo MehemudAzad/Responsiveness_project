@@ -1,15 +1,264 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Poppins:wght@500&family=Raleway&family=Roboto&display=swap');
 
-.body{
-    margin: 0%;
+body{
+    margin: 0;
     font-family:'Poppins', sans-serif; ;
 }
-.first{
-    width: 1321px;
-    height: 646px;
-    background-color: black;
+.header{
+   display: flex;
+   justify-content: center;
+   margin-top:15px;
+}
+.first-banner{
+    width: 1250px;
+    height: 600px;
+    background-color: #161616;
     border-radius:30px ;
+    color: white;
+   
+    display: flex;  
+     align-items: center;
+    
+    /* width: 1100px;
+    height: 600px; */
+}
+.header-description{
+    margin-left: 60px;
+    width: 530px;
+    height: 450px;
+    border: .5px solid rgb(3, 3, 33);
+    position: relative;
+    top: -50px;
+}
+h1{
+    font-size: 3em;
+    font-weight: 700px;
+    line-height: 80px; 
+}
+.ellepsis p {
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 30px;
+    display: none;
+    color: white
+  }
+.writing{
+    margin-left:100px ;
+    margin-top: 50px;
+   
+}
+.header-description h3{
+    font-size: .8em;
+    margin-bottom: 45px;
 }
 .button{
-
+    text-decoration: none;
+    background-color:#DD0000;
+    color: white;
+    padding:16px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center ;
+    transition: transform .5s linear 0s;
 }
+.button:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.header-pic img{
+    
+    border:1px solid rgb(3, 3, 34) ;
+    width: 90%;
+    position: relative;
+    left: 60px;
+    top: 40px;
+}
+
+.half-width{
+    width: 44%;
+}
+/*------------------------
+ main body starts from here 
+ ------------------------*/
+.flex-side-content{
+    display: flex;
+    justify-content:center;
+    margin: 20px;
+    margin-top: 100px;
+    gap: 30px;
+ }
+.side-content{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 300px;
+    background-color:#161616;
+    border-radius: 10px;
+ }
+#selected{
+    background-color: red;
+ }
+.container{
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+ }
+.container a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    transition: .5s;
+ }
+.container:hover{
+    background-color: greenyellow;
+    transform: scale(1.1);
+ }
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 340px;
+    border: .5px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px rgb(188, 181, 181);
+ }
+.transfer{
+    font-size: 16px;
+    width: 100px;
+    border: .5px #161616 solid;
+    margin: 3%;
+    border-radius: 5px;
+ }
+.card p{
+    margin-left: 10px;
+ }
+ 
+.blog-footer-item {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+  }
+  /*---------------------
+   view all design
+   --------------------- */
+   .view-all{
+    border: 1px solid red;
+    background-color: #DD0000;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 1.2% 2%;
+    align-items: center;
+    margin-left: 650px;
+    margin-top: 80px;
+    display: none;
+    /* visibility: hidden; */
+   }
+   .view-all:hover{
+    border: 1px solid lightgreen;
+    color: black;
+    background-color: lightgreen;
+    box-shadow: 2px 2px rgb(145, 145, 230);
+   }
+/* ----------------------
+footer starts from here 
+-----------------------*/
+footer{
+    background-color: #161616;
+}
+ .goal{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top:130px;
+}
+.horizontal-line{
+    width: 1200px;
+    height: .1px;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-evenly;
+    color: #B9B9B9;
+}
+.footer-info h3{
+    font-size: 16px;
+}
+
+/* ----------------
+responsiveness
+ ----------------*/
+ @media only screen and (max-width:688px) {
+    /* .banner-description p{
+        Contrary to popular belief, is not simply  random text.
+    } */
+    .first-banner{
+        width: 100%;
+        height: 800px;
+    }
+    
+    .header-description h3{
+        display: none;
+    }
+    .ellepsis{
+        display:visible;
+    }
+    .header-pic img{
+        width: 100%;
+    }
+
+    .half-width{
+        width: 100%;
+    }
+
+    /* .header,main,footer {
+        width: 100%;
+    } */
+    .first-banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 100%;
+    }
+        
+    .flex-side-content{
+        display: felx;
+        flex-direction: column;
+    }    
+    }
+    
+
+ @media only screen and (min-width:688px) and (max-width:992px){
+    .first-banner{
+        display: flex;
+        background-color: #161616;
+        width: 734px;
+        height: 398px;
+        border-radius: 20px;
+        color: white;
+        padding-left: 40px;
+      }
+.side-content{
+    display: flex;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ }
+
+
