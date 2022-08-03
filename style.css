@@ -161,24 +161,9 @@ h1{
   /*---------------------
    view all design
    --------------------- */
+   
    .view-all{
-    border: 1px solid red;
-    background-color: #DD0000;
-    color: white;
-    border-radius: 5px;
-    font-size: 25px;
-    padding: 1.2% 2%;
-    align-items: center;
-    margin-left: 650px;
-    margin-top: 80px;
     display: none;
-    /* visibility: hidden; */
-   }
-   .view-all:hover{
-    border: 1px solid lightgreen;
-    color: black;
-    background-color: lightgreen;
-    box-shadow: 2px 2px rgb(145, 145, 230);
    }
 /* ----------------------
 footer starts from here 
@@ -265,25 +250,35 @@ responsiveness
         width: 100%;
     } */
 
-   
+    .container{
+     border: #000000 solid 1.5px;
+    }
     .side-content{
         width: auto;
+        background-color: #ffffff;
     }
     .cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        align-items: center;
         /* width: 80%; */
     }
     .card{
-        width: 85%;
+        width: 100%;
         height: auto;
     }
-        
+    .upcoming-match-img{
+        width: 100%;
+    }
     .flex-side-content{
-        display: felx;
+        display: flex;
         flex-direction: column;
-    }    
+        text-align: center;
+    }     
+    .view-all{
+        display: none;
+    }
 
    /* footer Section  */
    .footer-section {
@@ -310,8 +305,9 @@ responsiveness
     
 
  @media only screen and (min-width:600px) and (max-width:992px){
-    .first-banner{
+    .banner-container{
         display: flex;
+        justify-content: center;
         background-color: #161616;
         width: 734px;
         height: 398px;
@@ -322,10 +318,52 @@ responsiveness
 .flex-side-content{
     display: block;
 }
+.side-content{
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.container{
+    gap: 50px;
+}
+.upcoming-match-img{
+    width: 100%;
+}
+
 .cards{
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
+.card{
+    width: 100%;
+    height: auto;
+}
+.view-all{
+    justify-content: center;
+    border: 1px solid red;
+    background-color: #DD0000;
+    color: white;
+    border-radius: 5px;
+    font-size:2rem;
+    padding: 1.2% 2%;
+    display: block;
+   }
+.view-all-flex{
+    display: flex;
+    justify-content: center;
+}
+.view-all:hover{
+    border: 1px solid lightgreen;
+    color: black;
+    background-color: lightgreen;
+    box-shadow: 2px 2px rgb(145, 145, 230);
+   }
  }
 
 
